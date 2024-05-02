@@ -1,6 +1,8 @@
 import { useContext, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import About from './pages/About';
+import Ducks from './pages/Ducks';
 import SignUpPage from './pages/SignUp';
 import LoginPage from './pages/Login';
 import SiteHeadingAndNav from './components/SiteHeadingAndNav';
@@ -21,6 +23,8 @@ export default function App() {
     <main>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/ducks' element={<Ducks />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/sign-up' element={<SignUpPage />} />
         <Route path='/users' element={<UsersPage />} />
